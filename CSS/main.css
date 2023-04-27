@@ -123,6 +123,10 @@ p {
 }
 
 
+#products {
+    display: flex;
+    justify-content: center;
+}
 .products-container {
     width: 100%;
     max-width: 1200px;
@@ -145,21 +149,69 @@ p {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
 }
+.products-container .products-bot-scroll {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.products-container .products-bot-scroll .icon {
+    filter: grayscale(1);
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+.products-container .products-bot-scroll .icon:hover {
+    filter: grayscale(0);
+}
+.products-container .products-bot-scroll .icon-left {
+    background-image: url(../img/izquierda.png);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
+.products-container .products-bot-scroll .icon-right {
+    background-image: url(../img/derecho.png);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
 .products-container .products-bot {
     width: 100%;
+    height: auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+.products-container .products-bot::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.products-container .products-bot a {
+    color: black;
+}
+.products-container .products-bot a:hover {
+    background-color: transparent;
 }
 .products-container .products-bot .product-item {
     flex-basis: 80%;
+    height: 350px;
     margin: 20px 5%;
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    text-align: center;
 
     background-color: var(--other-white);
 }
@@ -168,16 +220,14 @@ p {
 }
 .products-container .products-bot .product-item .product-item-img {
     margin-bottom: 12px;
+    height: 250px;
+    width: 180px;
 }
 .products-container .products-bot .product-item h2 {
     font-size: 2.5rem;
     margin-bottom: 12px;
     text-transform: uppercase;
-}
-.products-container .products-bot .product-item a {
-    border: 3px solid var(--black);
-    color: var(--black);
-    font-weight: 400;
-    font-size: 1.5rem;
-    padding: 10px 20px;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    padding: 5px 10px;
 }
