@@ -301,7 +301,7 @@ p {
     border-right: 1px solid var(--black);
 }
 .contact-container .contact-right .contact-right-items div h3 {
-    width: 150px;
+    width: 200px;
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
 }
@@ -314,3 +314,5 @@ p {
     background-color: black;
     color: white;
 }
+
+
