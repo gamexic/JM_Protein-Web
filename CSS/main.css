@@ -8,6 +8,7 @@ html {
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
+    background-color: white;
 }
 a {
 	text-decoration: none;
@@ -232,4 +233,84 @@ p {
     border: 1px solid var(--black);
     border-radius: 10px;
     padding: 5px 10px;
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.contact-container h2 {
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.contact-container .contact-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-container .contact-left div {
+    width: 100%;
+}
+.contact-container .contact-left iframe {
+    width: 100%;
+}
+.contact-container .contact-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-container .contact-right .contact-right-items {
+    width: 100%;
+    max-width: 800px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-container .contact-right .contact-right-items div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container .contact-right .contact-right-items div:nth-child(1),
+.contact-container .contact-right .contact-right-items div:nth-child(2) {
+    margin-bottom: 12px;
+}
+.contact-container .contact-right .contact-right-items div img {
+    width: 80px;
+    height: 100px;
+    object-fit: contain;
+    padding: 12px 12px 12px 0;
+    margin-right: 12px;
+    border-right: 1px solid var(--black);
+}
+.contact-container .contact-right .contact-right-items div h3 {
+    width: 150px;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+.contact-container .contact-right .contact-right-items div h3 a {
+    border:  1px solid var(--black);
+    padding: 4px 8px;
+    color: black;
+}
+.contact-container .contact-right .contact-right-items div h3 a:hover {
+    background-color: black;
+    color: white;
 }
